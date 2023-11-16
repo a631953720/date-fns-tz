@@ -169,7 +169,7 @@ function splitDateString(dateString) {
   var timeString
 
   // 2023/11/11 => [2023/11/11, 2023, /11/11, 0, 2023/11/11, undefined]
-  // 2023-11-11 => [2023-11-11, 2023-11-11,, 0, 2023-11-11, undefined]
+  // 2023-11-11 => [2023-11-11, 2023-11-11, '', 0, 2023-11-11, undefined]
   if (!parts) {
     parts = patterns.datePattern.exec(dateString)
     if (parts) {
